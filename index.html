@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- One -->
+					<section class="banner style1 orient-left content-align-left image-position-left fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1>That's what I do...</h1>
+							<p class="major">Hello World! My Name is Dimitry Budarin and here's a quick showcase of my coding skills and what I'm interested in.
+								My aim is to show you some data processing, cleaning, and visualisation using Stock and Alternative Data</a>.</p>
+							<br>DISCLAIMER: My Stock Analysis is for demonstration purposes only and is not aimed at maximising returns/sharpe ratios</br>.
+
+						</div>
+						<div class="image">
+							<img src="images/HomePAgeIntro.jpg" alt="" />
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section class="spotlight style1 orient-right content-align-left image-position-left onscroll-image-fade-in" id="first">
+						<div class="content">
+							<h2>Sock Analysis: Universe Selection</h2>
+							<p style= "margin-bottom:0;" >I start my search for "The ONE" portfolio right at the source. Analysing the fundamental data of 4396 listed US companies.
+								The aim is to reduce this number to around 100 (data obtained from quarterly reports from Yahoo Finance):
+								<p style="margin : 0; padding-top:0;">- Removing any crazy outliers</p>
+								<p >- Filtering companies with high PE, Price to Book, PEG Ratios, and low Quick Ratios</p>
+							<ul class="actions">
+								<li><a href="https://github.com/DimitryBudarin/Stock-Analysis-Demo/blob/main/StockAnalysis_Initial_Universe_Filter.ipynb" class="button">Python Code</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/BubbleViz.jpg" alt="">
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section class="spotlight style1 orient-left content-align-left image-position-left onscroll-image-fade-in">
+						<div class="content">
+							<h2>Stock Sentiment Analysis with NLP and ChatGPT</h2>
+							<p>To carry out further screening, sentiment analysis was run on the annual corporate 10K filings (obtained from SEC) and most recent news.</p>
+							<p style="margin : 0; padding-top:0;">- 10K Sentiment analysed using NLP (using vader dictionary)</p>
+							<p >- Webscrapping of recent news relating to the company and its analyses using ChatGPT</p>
+							<ul class="actions">
+								<li><a href="https://github.com/DimitryBudarin/Stock-Analysis-Demo/blob/main/StockAnalysis_NLP_Vador_sentiment.ipynb" class="button">Python Code - NLP Vader</a></li>
+								<li><a href="https://github.com/DimitryBudarin/Stock-Analysis-Demo/blob/main/ChatGPT%20sentiment%20analyser.ipynb" class="button">Python Code - ChatGPT</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/ChatGPTsent.jpg" alt="" />
+						</div>
+					</section>
+
+				<!-- Four -->
+					<section class="spotlight style1 orient-right content-align-left image-position-left onscroll-image-fade-in">
+						<div class="content">
+							<h2>Portfolio Optimisation and Factor Analysis</h2>
+							<p style="margin : 0; padding-top:0;">Here I perform portfolio optimisation by maximising Sharpe Ratio and comparing it to equally weighted portfolio. I construct efficient frontier and also analyse the portfolio based on Fama French Factor model: Value, Size, Aggressiveness</p>
+							<p > Performance, Sharpe Ratio, Drawdown, ES are calculated and compared against the market benchmark</p>
+							<ul class="actions stacked">
+								<li><a href="https://github.com/DimitryBudarin/Stock-Analysis-Demo/blob/main/StockAnalysis_returns_analysis.ipynb" class="button">Python Code</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/PtfPerf.jpg" alt="" />
+						</div>
+					</section>
+
+
+					<section class="spotlight style1 orient-left content-align-left image-position-right onscroll-image-fade-in">
+						<div class="content">
+							<h2>Alternative Data: Maritime Bottleneck Identification and Economic Activity</h2>
+							<p>This was my Master's thesis where I used AIS ship location data to estimate the effects that COVID pandemic had on waiting/unloading times of ships around the ports in the US and how this had an impact on economic activity. Project included:</p>
+							<p style="margin : 0; padding-top:0;">- Obtaining and Cleaning over 1TB of shipping data</p>
+							<p style="margin : 0; padding-top:0;">- Identifying and isolating relevant ships which were waiting to unload only</p>
+							<p >- Using Regression and Machine Learning methods to estimate economic impact</p>
+							<ul class="actions">
+								<li><a href="https://github.com/DimitryBudarin/Stock-Analysis-Demo/blob/main/Dimitry_Budarin_M2_FTD_Inflation_Thesis_Final.pdf" class="button">Thesis</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/USA281220AIS.JPG" alt="" />
+						</div>
+					</section>
+
+				<!-- Five -->
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>Thanks for viewing my Portfolio!</h2>
+						</div>
+
+						<!-- Gallery -->
+							<div class="gallery style2 medium lightbox onscroll-fade-in">
+								<article>
+									<a href="images/BubbleViz.jpg" class="image">
+										<img src="images/BubbleViz.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Market Caps Bubbles</h3>
+									</div>
+								</article>
+								<article>
+									<a href="images/Outliers.jpg" class="image">
+										<img src="images/Outliers.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Outliers identified with Box Plots</h3>
+									</div>
+								</article>
+								<article>
+									<a href="images/Cleaned.jpg" class="image">
+										<img src="images/Cleaned.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Data without Outliers</h3>
+									</div>
+								</article>
+								<article>
+									<a href="images/PEclean.jpg" class="image">
+										<img src="images/PEclean.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Sed Tempus</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/Piechart.jpg" class="image">
+										<img src="images/Piechart.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Sed Tempus</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/Vadersent.jpg" class="image">
+										<img src="images/Vadersent.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>NLP Sentiment Analysis</h3>
+									</div>
+								</article>
+								<article>
+									<a href="images/ChatGPTsent.jpg" class="image">
+										<img src="images/ChatGPTsent.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Sentiment Analysis with ChatGPT</h3>
+									</div>
+								</article>
+								<article>
+									<a href="images/PtfEF.jpg" class="image">
+										<img src="images/PtfEF.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Ipsum Lorem</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/DDReturns.jpg" class="image">
+										<img src="images/DDReturns.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Magna Risus</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+
+							</div>
+
+					</section>
+
+
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
